@@ -1,29 +1,32 @@
-#let somatic_page(title, body_text, illustration_path) = {
+#let somatic_page(
+  title: "Exercise Title", 
+  body_text: "Exercise instructions go here...", 
+  image_path: none, 
+  layout_style: "top"
+) = {
+  // Page Configuration
   set page(paper: "a5", margin: 2cm)
   set text(font: "Linux Libertine", size: 11pt)
   
-  // Header with your brand
-  align(right, text(gray, italic)[The Felt Sense | Somatic Shadow Work])
+  // Header: Your Brand
+  align(right, text(gray, style: "italic", size: 9pt)[The Felt Sense | Somatic Shadow Work])
   line(length: 100%, stroke: 0.5pt + gray)
   
   // Page Title
   v(1cm)
-  text(size: 20pt, weight: "bold")[#title]
+  align(center, text(size: 20pt, weight: "bold")[#title])
   v(0.5cm)
-  
-  // The Illustration Placeholder
-  rect(width: 100%, height: 6cm, stroke: 1pt + black, fill: luma(240))[
-    #align(center + horizon, text(italic, gray)[Illustration: #illustration_path])
-  ]
-  
-  // The Somatic Content
-  v(0.5cm)
-  body_text
-}
 
-// Example Call (This is what Antigravity will generate for you)
-#show: doc => somatic_page(
-  "The Weight in the Chest",
-  "Close your eyes and locate the sensation. Is it a stone? A cloud? Write its texture here...",
-  "assets/illustration_01.png"
-)
+  // AI-Driven Layout Logic
+  if layout_style == "top" and image_path != none {
+    figure(image(image_path, width: 90%))
+    v(0.5cm)
+    body_text
+  } else if layout_style == "bottom" and image_path != none {
+    body_text
+    v(0.5cm)
+    figure(image(image_path, width: 90%))
+  } else {
+    body_text
+  }
+}
