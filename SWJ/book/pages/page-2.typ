@@ -1,0 +1,22 @@
+#import "../template.typ": somatic_page
+
+#somatic_page(
+  title: "Copyright",
+  body_text: [
+    #align(center)[
+      #v(2cm)
+      Copyright © 2024 by The Felt Sense
+      
+      All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+      
+      For permission requests, write to the publisher/author.
+      
+      #v(3cm)
+      #figure(image("/assets/page-2-ILL-003.jpg", width: 30%))
+      
+      First Edition
+    ]
+  ],
+  image_path: none,
+  layout_style: "top"
+)
