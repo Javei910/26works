@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 10 10;
+    /* #0A0A0A */
+    --foreground: 245 241 232;
+    /* #F5F1E8 */
+    --gold: 212 175 55;
+    /* #D4AF37 */
+    --gold-light: 229 193 88;
+    /* #E5C158 */
+  }
+
+  body {
+    @apply bg-vinyl-black text-vinyl-cream antialiased;
+  }
+
+  * {
+    @apply border-vinyl-gray-800;
+  }
+}
+
+@layer components {
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  /* Premium button styles */
+  .btn-primary {
+    @apply bg-vinyl-gold hover:bg-vinyl-gold-light text-vinyl-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply glass hover:bg-white/10 text-vinyl-cream font-semibold px-6 py-3 rounded-lg transition-all duration-300;
+  }
+
+  /* Premium card styles */
+  .card {
+    @apply glass rounded-xl p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Loading spinner */
+  .spinner {
+    @apply animate-spin rounded-full border-4 border-vinyl-gray-700 border-t-vinyl-gold;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-vinyl-black-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-vinyl-gold rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-vinyl-gold-light;
+}

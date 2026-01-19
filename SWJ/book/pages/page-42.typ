@@ -33,6 +33,6 @@
     #v(0.5cm)
     *Track your consistency:* □ M □ T □ W □ Th □ F □ S □ Su
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase8-somatic.jpg",
   layout_style: "bottom"
 )

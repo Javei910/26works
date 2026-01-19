@@ -32,6 +32,6 @@
     #v(0.5cm)
     *How do you feel after?* #line(length: 50%, stroke: 0.5pt + gray)
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase6-somatic.jpg",
   layout_style: "bottom"
 )

@@ -1,31 +1,32 @@
 #import "../template.typ": somatic_page
 
+// PAGE 8: GARDEN SOMATIC MAP
+// Category: ANATOMY/SOMATIC - using reference from somatic-maps folder
+
 #somatic_page(
-  title: "Ritual: Planting the Seed",
+  title: "The Body as Garden",
   body_text: [
-    All change begins with a seed. Now that you have surveyed the land and mapped the terrain, it is time to plant an intention.
+    Close your eyes. Place your hands on your body. Scan from head to toe.
     
-    #v(1cm)
+    Where do you feel *tightness*? Where do you feel *numbness*? Where does the shadow live?
     
-    #rect(stroke: 0.5pt + rgb("#D4AF37"), inset: 20pt, width: 100%)[
-      #align(center)[*The Seed Ritual*]
-      
-      1.  *Find a physical seed* (a bean, a flower seed, or even a small stone).
-      2.  *Hold it in your hand.* Visualize the "Shadow" attribute you identified on the previous pages (e.g., your anger, your fear, your wildness).
-      3.  *Pour that energy into the seed.* Imagine it glowing with the power of that shadow.
-      4.  *"Plant" it.* You can bury it in the earth, place it in a potted plant, or keep it in a small box on your altar.
-      
-      As you do this, say aloud:
-      
-      #align(center)[
-        _ "I plant this shadow in the dark soil of my being.
-        May it compost into wisdom.
-        May it bloom into power." _
-      ]
+    #v(0.5cm)
+    
+    #align(center)[
+      #v(0.5cm)
+      #figure(image("/assets/generated images/somatic-body-outline.jpg", width: 55%))
+      #v(0.5cm)
     ]
     
+    *Mark the figure above with botanical symbols:*
+    - Draw THORNS or POISON IVY where you feel shame
+    - Draw STRANGLER VINES where fear constricts
+    - Draw WILTED FLOWERS where sadness pools
+    - Draw SEEDS or BUDS where hope still lives
+    
     #v(1cm)
-    *Date Planted:* #line(length: 40%, stroke: 0.5pt + gray)
+    
+    Remember: This is not diagnosis. This is *cartography*. You are mapping the territory of your own nervous system. There is no "right" answer. Only what is true for you, right now, in this body.
   ],
   image_path: none,
   layout_style: "bottom"

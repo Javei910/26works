@@ -11,7 +11,7 @@
     
     #align(center)[
       #v(0.5cm)
-      #figure(image("/assets/phase2-somatic.jpg", width: 55%))
+      #figure(image("/assets/generated images/phase2-somatic.jpg", width: 55%))
       #v(0.5cm)
     ]
     

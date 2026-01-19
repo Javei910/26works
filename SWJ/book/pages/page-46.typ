@@ -35,6 +35,6 @@
     *How do you feel?*
     #line(length: 70%, stroke: 0.5pt + gray)
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase9-somatic.jpg",
   layout_style: "bottom"
 )
