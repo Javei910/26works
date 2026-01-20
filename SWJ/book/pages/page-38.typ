@@ -31,6 +31,6 @@
     *What shifted when you wore your crown?*
     #line(length: 70%, stroke: 0.5pt + gray)
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase7-somatic.jpg",
   layout_style: "bottom"
 )

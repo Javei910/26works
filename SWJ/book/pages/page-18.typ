@@ -31,6 +31,6 @@
     #v(1cm)
     *Date of Letter:* #line(length: 40%, stroke: 0.5pt + gray)
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase2-somatic.jpg",
   layout_style: "bottom"
 )

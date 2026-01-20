@@ -1,16 +1,20 @@
-// The Somatic Shadow Work Journal - COMPLETE 130-PAGE EDITION
-// Main compilation file
+// The Somatic Shadow Work Journal - COMPLETE EDITION
+// Main compilation file for final book assembly
 
-#set document(
-  title: "The Somatic Shadow Work Journal",
-  author: "The Felt Sense"
-)
+#import "template.typ": project
+#show: project.with(show_numbers: true)
 
-// ===== FRONT MATTER (Pages 1-10) =====
-#include "pages/page-1.typ"
+// ===== FRONT MATTER =====
+#include "pages/title.typ"
 #pagebreak()
-#include "pages/page-2.typ"
+#include "pages/copyright.typ"
 #pagebreak()
+#include "pages/intro.typ"
+#pagebreak()
+#include "pages/declaration.typ"
+#pagebreak()
+
+// Original pages 3-10 (Garden of Soul intro, How to Use, Somatic Theory)
 #include "pages/page-3.typ"
 #pagebreak()
 #include "pages/page-4.typ"
@@ -98,7 +102,7 @@
 #include "pages/page-38.typ"
 #pagebreak()
 
-// ===== PHASE 8: Daily Integration Log (Pages 39-42 + 20 Daily Logs) =====
+// ===== PHASE 8: Daily Integration Log (Pages 39-42) =====
 #include "pages/page-39.typ"
 #pagebreak()
 #include "pages/page-40.typ"
@@ -108,67 +112,7 @@
 #include "pages/page-42.typ"
 #pagebreak()
 
-// Daily Log Pages (20 repetitions)
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-#include "pages/daily-log-template.typ"
-#pagebreak()
-
-// Weekly Reflection Pages (8 repetitions)
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-#include "pages/page-41.typ"
-#pagebreak()
-
-// ===== PHASE 9: Closing (Pages 43-46) =====
+// ===== PHASE 9: Closing (Pages 43-47) =====
 #include "pages/page-43.typ"
 #pagebreak()
 #include "pages/page-44.typ"
@@ -177,79 +121,118 @@
 #pagebreak()
 #include "pages/page-46.typ"
 #pagebreak()
-
-// ===== BLANK JOURNALING PAGES (25 pages) =====
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-#include "pages/blank-journal-template.typ"
-#pagebreak()
-
-// ===== BLANK SOMATIC MAP PAGES (8 pages) =====
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-#include "pages/blank-somatic-map-template.typ"
-#pagebreak()
-
-// ===== BACK MATTER =====
 #include "pages/page-47.typ"
+#pagebreak()
 
-// Total: 10 + 36 + 20 + 8 + 4 + 25 + 8 + 1 = 112 unique pages
-// With repetitive templates expanded = ~130 pages
+// ===== REPEATED TEMPLATES FOR JOURNALING SPACE =====
+
+// Daily Log Templates (20 repetitions)
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+#include "pages/daily-log-template.typ"
+#pagebreak()
+
+// Blank Journal Templates (25 repetitions)
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+#include "pages/blank-journal-template.typ"
+#pagebreak()
+
+// Blank Somatic Map Templates (8 repetitions)
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"
+#pagebreak()
+#include "pages/blank-somatic-map-template.typ"

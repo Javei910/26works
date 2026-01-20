@@ -1,22 +1,58 @@
 #import "../template.typ": somatic_page
 
+// PAGE 7: GARDEN OF THE SOUL - Deep Dive Prompts
+// Mad-lib structured prompts per Shadow Work Philosopher
+// Interactive-area styling
+
 #somatic_page(
-  title: "Mapping the Terrain",
+  title: "What Grows in Your Garden?",
   body_text: [
-    Before we can cultivate the garden, we must map the soil.
+    These prompts are designed to bypass your protective thinking mind and speak directly to your soma—your body's knowing.
     
-    Look at the figure below. It represents your somatic self—the physical vessel of your experience.
+    Do not overthink. Place your hand on your heart or belly. Breathe. Write what arises.
     
-    Close your eyes. Scan your body from head to toe. Where do you feel exploring the "Shadow" in your body right now? Is it a tightness in the chest? A fluttering in the stomach? A heaviness in the shoulders?
+    #v(1cm)
     
-    #align(center)[
-      #v(0.5cm)
-      #figure(image("/assets/page-7-somatic-map.jpg", width: 60%))
-      #v(0.5cm)
-    ]
+    #set text(style: "italic", size: 10.5pt)
     
-    *Mark the map above.* Draw vines or roots where you feel tension. Draw flowers where you feel openness. This is your baseline.
+    *1. The part of me that I have buried deepest is* __________ *because* __________.
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    
+    #v(1cm)
+    
+    *2. When I think about my shadow, my body feels* __________ *in my* __________.
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    
+    #v(1cm)
+    
+    *3. If my shadow could speak, it would say:* __________
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
+    #v(1em)
+    #line(length: 100%, stroke: (dash: "dotted"))
   ],
-  image_path: none, // We embed manually for custom sizing
+  image_path: none,
   layout_style: "bottom"
 )

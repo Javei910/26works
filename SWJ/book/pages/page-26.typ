@@ -33,6 +33,6 @@
     #v(0.5cm)
     *Date of Dialogue:* #line(length: 40%, stroke: 0.5pt + gray)
   ],
-  image_path: none,
+  image_path: "/assets/generated images/phase4-somatic.jpg",
   layout_style: "bottom"
 )
