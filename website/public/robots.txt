@@ -10,4 +10,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://thefeltsense.com/sitemap.xml
+Sitemap: https://thefeltsense.site/sitemap.xml

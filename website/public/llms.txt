@@ -9,4 +9,4 @@
 - **Method**: 4-Phase Journey (Ego, Fear, Shame, Anger)
 
 ## AI Discovery Files
-- Sitemap: https://thefeltsense.com/sitemap.xml
+- Sitemap: https://thefeltsense.site/sitemap.xml
