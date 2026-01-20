@@ -14,6 +14,45 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://thefeltsense.site/#organization",
+                "name": "The Felt Sense",
+                "url": "https://thefeltsense.site",
+                "logo": "https://thefeltsense.site/assets/marketing_01_cover.jpg",
+                "sameAs": [
+                    "https://www.instagram.com/monoworkla"
+                ]
+            },
+            {
+                "@type": "Person",
+                "name": "The Felt Sense Author",
+                "description": "Somatic Shadow Work Expert",
+                "jobTitle": "Shadow Work Practitioner"
+            },
+            {
+                "@type": "Product",
+                "name": "The Felt Sense: Somatic Shadow Work Journal",
+                "description": "A 130-page somatic journal bridging Jungian depth with body-based integration. Release trauma where it lives: in your nervous system.",
+                "image": "https://thefeltsense.site/assets/marketing_01_cover.jpg",
+                "brand": { "@id": "https://thefeltsense.site/#organization" },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "17.00",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00"
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="/src/style.css">
 </head>
 
