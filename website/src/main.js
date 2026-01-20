@@ -1,3 +1,8 @@
+import { injectSchema } from './schema.js';
+
+// Inject JSON-LD Schema for SEO
+injectSchema();
+
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ===========================

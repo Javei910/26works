@@ -13,219 +13,230 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body>
 
     <!-- Section 1: Sticky Navigation Header -->
     <header class="sticky-nav">
-        <div class="nav-container">
+        <nav class="nav-container" aria-label="Main navigation">
             <div class="logo">The Felt Sense</div>
             <a href="https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00" class="btn btn-ghost">Get the Journal</a>
-        </div>
+        </nav>
     </header>
 
     <!-- Section 2: Hero Section (The Invitation) -->
-    <section id="hero" class="hero-section">
-        <div class="container grid-2-col">
-            <div class="hero-content">
-                <h1>Stop thinking your way out. <span class="italic-accent">Feel your way home.</span></h1>
-                <p class="sub-headline">The first Shadow Work Journal to bridge Jungian depth with somatic embodiment.
-                    Release the shadow where it actually lives: in your body tissue.</p>
-                <a href="https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00" class="btn btn-solid-green">Order the Somatic
-                    Journal — $17 <span class="old-price">$35</span></a>
+    <main>
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+            <div class="container grid-2-col">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Stop thinking your way out. <span class="italic-accent">Feel your way
+                            home.</span></h1>
+                    <p class="sub-headline">The first Shadow Work Journal to bridge Jungian depth with somatic
+                        embodiment.
+                        Release the shadow where it actually lives: in your body tissue.</p>
+                    <a href="https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00" class="btn btn-solid-green"
+                        aria-label="Order the Somatic Journal for $17">Order the Somatic
+                        Journal — $17 <span class="old-price">$35</span></a>
+                </div>
+                <div class="hero-image">
+                    <img src="src/assets/marketing_01_cover.jpg" alt="Somatic Shadow Work Journal Cover"
+                        class="shadow-mockup">
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/marketing_01_cover.jpg" alt="Somatic Shadow Work Journal Cover" class="shadow-mockup">
+        </section>
+
+        <!-- Section 3: The "Somatic Gap" (Problem/Solution) -->
+        <article id="somatic-gap" class="parchment-bg" aria-labelledby="gap-heading">
+            <div class="container narrow-container text-center">
+                <h2 id="gap-heading" class="section-title">The Somatic Gap</h2>
+                <p class="body-text">
+                    You can analyze your trauma for years. You can have all the 'lightbulb moments' in therapy.
+                    But if your nervous system still feels unsafe, nothing changes.
+                    True integration happens neck-down.
+                </p>
+                <blockquote class="pull-quote">
+                    "Insight without embodiment is just entertainment."
+                </blockquote>
             </div>
-        </div>
-    </section>
+        </article>
 
-    <!-- Section 3: The "Somatic Gap" (Problem/Solution) -->
-    <section id="somatic-gap" class="parchment-bg">
-        <div class="container narrow-container text-center">
-            <h2 class="section-title">The Somatic Gap</h2>
-            <p class="body-text">
-                You can analyze your trauma for years. You can have all the 'lightbulb moments' in therapy.
-                But if your nervous system still feels unsafe, nothing changes.
-                True integration happens neck-down.
-            </p>
-            <blockquote class="pull-quote">
-                "Insight without embodiment is just entertainment."
-            </blockquote>
-        </div>
-    </section>
+        <!-- Section 4: The Visual Flip-Through (Proof of Value) -->
+        <section id="flip-through" class="slider-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Look Inside</h2>
+                    <p>130 pages of somatic rituals and depth psychology. Designed to be felt, not just read.</p>
+                </div>
 
-    <!-- Section 4: The Visual Flip-Through (Proof of Value) -->
-    <section id="flip-through" class="slider-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Look Inside</h2>
-                <p>130 pages of somatic rituals and depth psychology. Designed to be felt, not just read.</p>
-            </div>
-
-            <div class="image-slider-container">
-                <button class="slider-btn prev" aria-label="Previous slide">❮</button>
-                <div class="slider-track">
-                    <!-- Slide 1: Somatic Map -->
-                    <div class="slide active">
-                        <img src="assets/marketing_09_somatic_map_1.jpg" alt="Somatic Map Page">
-                        <div class="slide-caption">The Somatic Map: Track where emotions live in your biology.</div>
+                <div class="image-slider-container">
+                    <button class="slider-btn prev" aria-label="Previous slide">❮</button>
+                    <div class="slider-track">
+                        <!-- Slide 1: Somatic Map -->
+                        <div class="slide active">
+                            <img src="src/assets/marketing_09_somatic_map_1.jpg" alt="Somatic Map Page">
+                            <div class="slide-caption">The Somatic Map: Track where emotions live in your biology.</div>
+                        </div>
+                        <!-- Slide 2: Theory Sandwich -->
+                        <div class="slide">
+                            <img src="src/assets/marketing_11_theory_page.jpg" alt="Theory Sandwich Method">
+                            <div class="slide-caption">The Theory Sandwich: Concept, Practice, and Prompt.</div>
+                        </div>
+                        <!-- Slide 3: Botanical Art -->
+                        <div class="slide">
+                            <!-- Using a relevant botanical image -->
+                            <img src="src/assets/marketing_06_shame_phase.jpg"
+                                alt="Art Nouveau Botanical Illustrations">
+                            <div class="slide-caption">Art Nouveau illustrations that honor the organic nature of
+                                healing.
+                            </div>
+                        </div>
                     </div>
-                    <!-- Slide 2: Theory Sandwich -->
-                    <div class="slide">
-                        <img src="assets/marketing_11_theory_page.jpg" alt="Theory Sandwich Method">
-                        <div class="slide-caption">The Theory Sandwich: Concept, Practice, and Prompt.</div>
+                    <button class="slider-btn next" aria-label="Next slide">❯</button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
                     </div>
-                    <!-- Slide 3: Botanical Art -->
-                    <div class="slide">
-                        <!-- Using a relevant botanical image -->
-                        <img src="assets/marketing_06_shame_phase.jpg" alt="Art Nouveau Botanical Illustrations">
-                        <div class="slide-caption">Art Nouveau illustrations that honor the organic nature of healing.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The 4-Phase Journey (The Method) -->
+        <section id="phases" class="phases-section">
+            <div class="container">
+                <h2 class="text-center section-title">The 4-Phase Journey</h2>
+                <div class="grid-2x2">
+                    <!-- Phase 1 -->
+                    <div class="phase-card">
+                        <div class="phase-icon">🎭</div>
+                        <h3>Phase 1: Ego</h3>
+                        <div class="phase-subtitle">The Mask</div>
+                        <p>Gently peel back the personas you built to survive childhood.</p>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="phase-card">
+                        <div class="phase-icon">🗺️</div>
+                        <h3>Phase 2: Fear</h3>
+                        <div class="phase-subtitle">The Map</div>
+                        <p>Identify where fear lives in your unique biology.</p>
+                    </div>
+                    <!-- Phase 3 -->
+                    <div class="phase-card">
+                        <div class="phase-icon">💧</div>
+                        <h3>Phase 3: Shame</h3>
+                        <div class="phase-subtitle">The Medicine</div>
+                        <p>Dissolve the weight of unworthiness through the "Felt Sense" method.</p>
+                    </div>
+                    <!-- Phase 4 -->
+                    <div class="phase-card">
+                        <div class="phase-icon">🔥</div>
+                        <h3>Phase 4: Anger</h3>
+                        <div class="phase-subtitle">The Fire</div>
+                        <p>Channel sacred rage into creative power.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: The "Shadow Contract" (The Hook) -->
+        <section id="contract" class="contract-section">
+            <div class="contract-bg-overlay"></div> <!-- marketing_03 at 20% opacity via CSS -->
+            <div class="container text-center contract-content">
+                <h2>The Shadow Contract</h2>
+                <p class="contract-text">
+                    The most important contract you will ever sign involves no lawyers.
+                    Page 3 of the journal is your Declaration of Intent.
+                    Sign it to signal your subconscious that you are finally done abandoning yourself.
+                </p>
+                <button id="preview-contract-btn" class="btn-link-gold hover-underline">[ Preview the Contract
+                    ]</button>
+            </div>
+
+            <!-- Simple Modal for Contract Preview -->
+            <div id="contract-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img src="src/assets/marketing_03_declaration.jpg" alt="The Shadow Contract Page">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Instagram Gallery (Social Proof) -->
+        <aside id="gallery" class="gallery-section" aria-label="Social proof and community">
+            <div class="container text-center">
+                <h2>Join the Somatic Laboratory</h2>
+                <p class="handle">@TheFeltSense</p>
+
+                <div class="gallery-grid">
+                    <!-- Post 1: Sacred Commitment -->
+                    <div class="instagram-card">
+                        <div class="inst-header">
+                            <div class="inst-avatar"></div>
+                            <div class="inst-handle">monoworkla</div>
+                        </div>
+                        <a href="https://www.instagram.com/p/DTqTRMRgHNT/" target="_blank" class="inst-img-link">
+                            <img src="src/assets/marketing_03_declaration.jpg" alt="Sacred Commitment Page">
+                        </a>
+                        <div class="inst-footer">
+                            <div class="inst-icons">
+                                <span>♡</span> <span>💬</span> <span>➤</span>
+                            </div>
+                            <div class="inst-likes">42 likes</div>
+                            <div class="inst-caption">Make a sacred commitment to yourself. The journey begins here. 🖋️
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 2: Begin Your Journey -->
+                    <div class="instagram-card">
+                        <div class="inst-header">
+                            <div class="inst-avatar"></div>
+                            <div class="inst-handle">monoworkla</div>
+                        </div>
+                        <a href="https://www.instagram.com/p/DTqTJoNACjd/" target="_blank" class="inst-img-link">
+                            <img src="src/assets/marketing_02_title.jpg" alt="Begin Your Journey">
+                        </a>
+                        <div class="inst-footer">
+                            <div class="inst-icons">
+                                <span>♡</span> <span>💬</span> <span>➤</span>
+                            </div>
+                            <div class="inst-likes">89 likes</div>
+                            <div class="inst-caption">The first step is always the hardest, but the most important. 🌱
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3: Mystical Cover -->
+                    <div class="instagram-card">
+                        <div class="inst-header">
+                            <div class="inst-avatar"></div>
+                            <div class="inst-handle">monoworkla</div>
+                        </div>
+                        <a href="https://www.instagram.com/p/DTqTA2WgMu0/" target="_blank" class="inst-img-link">
+                            <img src="src/assets/marketing_01_cover.jpg" alt="Shadow Work Journal Cover">
+                        </a>
+                        <div class="inst-footer">
+                            <div class="inst-icons">
+                                <span>♡</span> <span>💬</span> <span>➤</span>
+                            </div>
+                            <div class="inst-likes">120 likes</div>
+                            <div class="inst-caption">Embrace the shadow. Find the light within. 🌑✨</div>
                         </div>
                     </div>
                 </div>
-                <button class="slider-btn next" aria-label="Next slide">❯</button>
-                <div class="slider-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section 5: The 4-Phase Journey (The Method) -->
-    <section id="phases" class="phases-section">
-        <div class="container">
-            <h2 class="text-center section-title">The 4-Phase Journey</h2>
-            <div class="grid-2x2">
-                <!-- Phase 1 -->
-                <div class="phase-card">
-                    <div class="phase-icon">🎭</div>
-                    <h3>Phase 1: Ego</h3>
-                    <div class="phase-subtitle">The Mask</div>
-                    <p>Gently peel back the personas you built to survive childhood.</p>
-                </div>
-                <!-- Phase 2 -->
-                <div class="phase-card">
-                    <div class="phase-icon">🗺️</div>
-                    <h3>Phase 2: Fear</h3>
-                    <div class="phase-subtitle">The Map</div>
-                    <p>Identify where fear lives in your unique biology.</p>
-                </div>
-                <!-- Phase 3 -->
-                <div class="phase-card">
-                    <div class="phase-icon">💧</div>
-                    <h3>Phase 3: Shame</h3>
-                    <div class="phase-subtitle">The Medicine</div>
-                    <p>Dissolve the weight of unworthiness through the "Felt Sense" method.</p>
-                </div>
-                <!-- Phase 4 -->
-                <div class="phase-card">
-                    <div class="phase-icon">🔥</div>
-                    <h3>Phase 4: Anger</h3>
-                    <div class="phase-subtitle">The Fire</div>
-                    <p>Channel sacred rage into creative power.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 6: The "Shadow Contract" (The Hook) -->
-    <section id="contract" class="contract-section">
-        <div class="contract-bg-overlay"></div> <!-- marketing_03 at 20% opacity via CSS -->
-        <div class="container text-center contract-content">
-            <h2>The Shadow Contract</h2>
-            <p class="contract-text">
-                The most important contract you will ever sign involves no lawyers.
-                Page 3 of the journal is your Declaration of Intent.
-                Sign it to signal your subconscious that you are finally done abandoning yourself.
-            </p>
-            <button id="preview-contract-btn" class="btn-link-gold hover-underline">[ Preview the Contract ]</button>
-        </div>
-
-        <!-- Simple Modal for Contract Preview -->
-        <div id="contract-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <img src="assets/marketing_03_declaration.jpg" alt="The Shadow Contract Page">
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 7: Instagram Gallery (Social Proof) -->
-    <section id="gallery" class="gallery-section">
-        <div class="container text-center">
-            <h2>Join the Somatic Laboratory</h2>
-            <p class="handle">@TheFeltSense</p>
-
-            <div class="gallery-grid">
-                <!-- Post 1: Sacred Commitment -->
-                <div class="instagram-card">
-                    <div class="inst-header">
-                        <div class="inst-avatar"></div>
-                        <div class="inst-handle">monoworkla</div>
-                    </div>
-                    <a href="https://www.instagram.com/p/DTqTRMRgHNT/" target="_blank" class="inst-img-link">
-                        <img src="assets/marketing_03_declaration.jpg" alt="Sacred Commitment Page">
-                    </a>
-                    <div class="inst-footer">
-                        <div class="inst-icons">
-                            <span>♡</span> <span>💬</span> <span>➤</span>
-                        </div>
-                        <div class="inst-likes">42 likes</div>
-                        <div class="inst-caption">Make a sacred commitment to yourself. The journey begins here. 🖋️
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Post 2: Begin Your Journey -->
-                <div class="instagram-card">
-                    <div class="inst-header">
-                        <div class="inst-avatar"></div>
-                        <div class="inst-handle">monoworkla</div>
-                    </div>
-                    <a href="https://www.instagram.com/p/DTqTJoNACjd/" target="_blank" class="inst-img-link">
-                        <img src="assets/marketing_02_title.jpg" alt="Begin Your Journey">
-                    </a>
-                    <div class="inst-footer">
-                        <div class="inst-icons">
-                            <span>♡</span> <span>💬</span> <span>➤</span>
-                        </div>
-                        <div class="inst-likes">89 likes</div>
-                        <div class="inst-caption">The first step is always the hardest, but the most important. 🌱</div>
-                    </div>
-                </div>
-
-                <!-- Post 3: Mystical Cover -->
-                <div class="instagram-card">
-                    <div class="inst-header">
-                        <div class="inst-avatar"></div>
-                        <div class="inst-handle">monoworkla</div>
-                    </div>
-                    <a href="https://www.instagram.com/p/DTqTA2WgMu0/" target="_blank" class="inst-img-link">
-                        <img src="assets/marketing_01_cover.jpg" alt="Shadow Work Journal Cover">
-                    </a>
-                    <div class="inst-footer">
-                        <div class="inst-icons">
-                            <span>♡</span> <span>💬</span> <span>➤</span>
-                        </div>
-                        <div class="inst-likes">120 likes</div>
-                        <div class="inst-caption">Embrace the shadow. Find the light within. 🌑✨</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </aside>
+    </main>
 
     <!-- Section 8: The Bottom CTA (The Close) -->
     <section id="bottom-cta" class="bottom-cta-section">
         <div class="container">
             <div class="cta-box text-center">
                 <h2>The garden of your soul is waiting to be tended.<br>Are you ready to descend?</h2>
-                <a href="https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00" class="btn btn-solid-green btn-large">Order the
+                <a href="https://buy.stripe.com/7sYdRb0Bz6Hs5SSdbz67S00" class="btn btn-solid-green btn-large">Order
+                    the
                     Somatic Journal — $17 <span class="old-price">$35</span></a>
                 <p class="trust-badge">Secured by Stripe. Instant PDF Download. Digital & Print Ready.</p>
             </div>
@@ -244,7 +255,7 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
